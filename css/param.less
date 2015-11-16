@@ -1,0 +1,65 @@
+*,
+*:after,
+*:before
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	font-size: 62.5%;
+}
+
+body
+{
+	font-size: 1.6rem;
+	color: @black;
+}
+
+.h1{  }
+.h2{  }
+.h3{  }
+.h4{  }
+
+strong
+{
+
+}
+
+.inlineblock
+{
+	display:inline-block;
+}
+
+.clear
+{
+	display: block;
+	float: none !important;
+	clear: both !important;
+}
+
+.blocky
+{
+	.mixin-blocky;
+}
+
+.show-mobile
+{
+	display: block;
+
+	// 767
+	@media only screen and (min-width:47.938em) {
+		display: none;
+	}
+}
+
+.block-error
+{
+
+}
+
+.error
+{
+	//margin: 2rem 0;
+	color: @red;
+}
